@@ -1,0 +1,23 @@
+{
+  "name": "s2r-www",
+  "version": "1.0.0",
+  "description": "Selector-2-regexp website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/m-yoshiro/s2r-www.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-yoshiro/s2r-www/issues"
+  },
+  "homepage": "https://github.com/m-yoshiro/s2r-www#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
