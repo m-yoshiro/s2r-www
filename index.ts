@@ -3,11 +3,13 @@ import selector2Regexp from "selector-2-regexp";
 document.addEventListener('DOMContentLoaded', () => {
   const result = document.querySelector('.result');
   const inputSelector = document.getElementById('selector');
-  
+
   inputSelector.addEventListener('input', (evt) => {
-    console.log(evt.target.value);
-    console.log(selector2Regexp('.button'));
     const { target } = evt;
+
+    if (!(target instanceof HTMLInputElement)) {
+      throw new Error("errrrrrr");
+    }
 
     let output = '';
     if(target.value) {
