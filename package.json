@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/m-yoshiro/s2r-www#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.3.1"
   }
 }
