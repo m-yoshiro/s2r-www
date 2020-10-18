@@ -1,4 +1,5 @@
 import selector2Regexp from "selector-2-regexp";
+import Prism from "prismjs";
 
 document.addEventListener('DOMContentLoaded', () => {
   const result = document.getElementById('result');
@@ -16,12 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if(target.value) {
       
       try {
-        output = selector2Regexp(target.value);
+        const code = selector2Regexp(target.value);
+        const html = Prism.highlight(code, Prism.languages.javascript, 'regex');
+        output = html;
       } catch (error) {
         console.error(error);
       }
     }
-    result.textContent = output;
+    result.innerHTML = output;
   });
 
   copyButton.addEventListener('click', (evt) => {
