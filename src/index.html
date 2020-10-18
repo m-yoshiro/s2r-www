@@ -3,33 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selector-2-regexp</title>
+  <title>Selector2Regexp</title>
   <link rel="stylesheet" href="index.tailwind.css">
   <link rel="stylesheet" href="../node_modules/prismjs/themes/prism.css">
 </head>
+
 <body>
+  <div class="layout p-4">
+    <header class="">
+      <div class="">
+        <h1 class="text-2xl">Selector2Regexp</h1>
+        <p class="mt-2">
+          Generate regular expressions of JavaScript from CSS selectors.
+        </p>
+      </div>
+    </header>
 
-  <main>
-    
-
-    <div class="flex justify-center">
-      <div class="container max-w-md">
-        <h1 class="text-3xl">Selector-2-regexp</h1>
-        <div class="mt-4">
-          <input type="text" id="selector" class="p-2 bg-gray-200 border focus:bg-white w-full rounded" placeholder="Enter CSS selector... e.g.) .box > .button" aria-label="Enter CSS selector">
-          <div class="mt-5">
-            <div class="flex">
-              <button class="copy ml-auto text-purple-500 hover:text-white hover:bg-purple-500 border border-purple-500 text-xs font-semibold rounded px-2 py-1 leading-normal" data-target="result" type="button">copy</button>
+    <main class="mt-4 sm:mt-3">
+      <div class="flex">
+        <div class="container max-w-xl">
+          <div class="">
+            <input type="text" id="selector" class="p-2 bg-gray-200 border focus:bg-white w-full rounded" placeholder="Enter CSS selector... (e.g. .box > .button)" aria-label="Enter CSS selector">
+            <div class="mt-4 sm:mt-6">
+              <div class="flex">
+                <button class="copy ml-auto text-purple-500 hover:text-white hover:bg-purple-500 border border-purple-500 text-xs font-semibold rounded px-2 py-1 leading-normal" data-target="result" type="button">copy</button>
+              </div>
+              <pre class="p-2 mt-2 text-xs box-content h-20 rounded break-all whitespace-normal language-regex"><code id="result"></code></pre>
             </div>
-            <pre class="p-2 mt-2 text-xs box-content border h-20 rounded break-all whitespace-normal language-regex"><code id="result"></code></pre>
           </div>
         </div>
       </div>
-    </div>
-    
-    
-  </main>
+    </main>
+
+    <aside class="mt-4 sm:mt-0">
+      <div class="flex">
+        <span>
+          <a class="github-button" href="https://github.com/m-yoshiro/Selector2Regexp" data-show-count="true" aria-label="Star m-yoshiro/Selector2Regexp on GitHub">Star</a>
+        </span>
+        <span class="ml-2">
+          <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+        </span>
+      </div>
+    </aside>
+  </div>
 
   <script src="./index.ts" defer></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script async defer src="https://platform.twitter.com/widgets.js"></script>
 </body>
 </html>

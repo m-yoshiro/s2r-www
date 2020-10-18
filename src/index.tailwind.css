@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  height: 100%;
+}
+
+.layout {
+  /* display: grid; */
+
+
+  /* grid-template-columns: 26vw 1fr;
+  grid-template-areas: "header main"; */
+}
+
+@media (min-width: 640px) {
+  .layout {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 26vw 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+      "header main"
+      "aside main";
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
