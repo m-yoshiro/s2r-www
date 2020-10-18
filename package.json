@@ -6,19 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html -d ./docs --public-url https://m-yoshiro.github.io/Selector2Regexp/"
+    "build": "parcel build src/index.html -d ./docs --public-url https://m-yoshiro.github.io/selector2regexp-web/"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/m-yoshiro/s2r-www.git"
+    "url": "git+ssh://git@github.com/m-yoshiro/selector2regexp-web.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/m-yoshiro/s2r-www/issues"
+    "url": "https://github.com/m-yoshiro/selector2regexp-web/issues"
   },
-  "homepage": "https://github.com/m-yoshiro/s2r-www#readme",
+  "homepage": "https://github.com/m-yoshiro/selector2regexp-web#readme",
   "devDependencies": {
     "parcel-bundler": "^1.3.1",
     "prismjs": "^1.22.0",
