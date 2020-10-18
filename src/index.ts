@@ -31,23 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const { target } = evt;
 
     if (!(target instanceof HTMLButtonElement)) {
-      throw new Error("butttttttt");
+      throw new Error("target must be an instance of HTMLButtonElement");
     }
 
     if (!target.dataset.target) {
-      throw new Error("butttttttt");
+      throw new Error("target must have a 'data-target' property");
     }
 
     const targetId = target.dataset.target;
     const resource = document.getElementById(targetId);
 
     if (!resource) {
-      throw new Error("butttttttt");
+      throw new Error("resuource is not found");
     }
     
-    navigator.clipboard.writeText(resource.textContent).then(
-      () => { console.log('copied!!')},
-      () => {}
-    );
-  })
-})
+    navigator.clipboard.writeText(resource.textContent);
+  });
+});
