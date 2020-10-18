@@ -4,15 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selector-2-regexp</title>
+  <link rel="stylesheet" href="index.tailwind.css">
 </head>
 <body>
 
   <main>
-    <h1>Selector-2-regexp</h1>
-    <input type="text" id="selector">
+    
 
-    <pre id="result"></pre>
-    <button class="copy" data-target="result" type="button">copy</button>
+    <div class="flex justify-center">
+      <div class="container max-w-md">
+        <h1 class="text-3xl">Selector-2-regexp</h1>
+        <div class="mt-4">
+          <input type="text" id="selector" class="p-2 bg-gray-200 border focus:bg-white w-full rounded" placeholder="Enter CSS selector... e.g.) .box > .button" aria-label="Enter CSS selector">
+          <div class="mt-5">
+            <div class="flex">
+              <button class="copy ml-auto text-purple-500 hover:text-white hover:bg-purple-500 border border-purple-500 text-xs font-semibold rounded px-2 py-1 leading-normal" data-target="result" type="button">copy</button>
+            </div>
+            <pre id="result" class="p-2 mt-2 text-xs box-content border h-20 rounded break-all whitespace-normal"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
   </main>
 
   <script src="./index.ts" defer></script>
