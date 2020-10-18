@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const { target } = evt;
 
     if (!(target instanceof HTMLInputElement)) {
-      throw new Error("errrrrrr");
+      throw new Error("target must be an instance of HTMLInputElement");
     }
 
     let output = '';
